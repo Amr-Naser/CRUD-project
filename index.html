@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <meta charset="utf-8" />
+      <title>Bookmark</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+
+       
+    </head>
+    <body>
+      
+
+      <header>
+
+        <div class="container">
+          <h1 class="my-5">Bookmarker</h1>
+          <hr>
+          <div class="container mb-4 bg-e text-center overflow-auto">
+            <h2 class=" mt-5 mb-4">Bookmark your favorite sites</h2>
+            <div class="form-group">
+              <h4 class="" >Site Name</h4>
+              <input  id="nameInp" placeholder="Bookmark Name" class="form-control mx-auto w-75">
+            </div>
+            <div class="form-group">
+              <h4 class="" >Site URL</h4>
+              <input  id="urlInp" placeholder="Website URL" class="form-control mx-auto w-75">
+            </div>
+            <button id="addBtn" class="btn btn-primary mb-5 ">Submit</button>
+          </div>
+          <hr>
+          <small>&copy 2020 Bookmarker Inc</small>
+        </div>
+
+
+      </header>
+
+      <div class="w-50 m-auto py-5 position-relative">
+        <input type="text" onkeyup="search(this.value)" placeholder="search with name" class="form-control"/>
+        <div id="result" class="position-absolute"></div>
+      </div>
+
+
+      <footer>
+        <div class="container mt-5">
+          <table class="table text-center">
+            <thead>
+              <th>Site Name</th>
+              <th>Site URL</th>
+              <th>Delete</th>
+              <th>Update</th>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+          </table>
+        </div>
+      </footer>
+
+
+
+
+          <script src="js/jquery-3.4.1.slim.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>  
+          <script src="js/first.js"></script>
+
+    </body>
+</html>
